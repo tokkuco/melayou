@@ -1,6 +1,7 @@
 class PagesController < ApplicationController
   def home
   	@posts = Event.all
+  	@packages = Package.all
   end
 
   def about
