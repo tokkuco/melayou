@@ -4,5 +4,5 @@
 	<p><%= product.title %></p>
 	<p><%= product.subtitle %></p>
 	<p><%= product.price %></p>
-	<%= image_tag product.main_image %>
+	<%= image_tag product.main_image if !product.thumb_image.nil? %>
 <% end %>
